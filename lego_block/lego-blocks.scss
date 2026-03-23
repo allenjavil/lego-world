@@ -1,0 +1,55 @@
+$block-width: 200px;
+$block-height: 65px;
+$total-width: 600px;
+
+@mixin block-outline {
+  border: 0.1px solid black;
+}
+
+@mixin lego-block($block-color) {
+  display: flex;
+  flex-direction: column;
+  width: $block-width;
+
+  .lego-notches {
+    display: flex;
+    justify-content: space-around;
+
+    .notch {
+      height: 12px;
+      width: 28px;
+      border-radius: 25% 25% 0 0;
+      background-color: $block-color;
+      @include block-outline;
+    }
+  }
+  
+  .block {
+    height: $block-height;
+    background-color: $block-color;
+    @include block-outline;
+  }
+}
+
+.lego-stacks {
+  .top-stack {
+    display: flex;
+    justify-content: center;
+    width: $total-width;
+    margin-bottom: -15px;
+    position: relative;
+
+    .lego-block {
+      @include lego-block(blue);
+    }
+  }
+
+  .bottom-stack {
+    display: flex;
+    width: $total-width;
+
+    .lego-block {
+      @include lego-block(green);
+    }
+  }
+}

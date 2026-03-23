@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/lego-world/static/css/main.2edcf0fc.css",
+    "main.js": "/lego-world/static/js/main.5add7c60.js",
+    "static/js/453.85bc4d76.chunk.js": "/lego-world/static/js/453.85bc4d76.chunk.js",
+    "index.html": "/lego-world/index.html",
+    "main.2edcf0fc.css.map": "/lego-world/static/css/main.2edcf0fc.css.map",
+    "main.5add7c60.js.map": "/lego-world/static/js/main.5add7c60.js.map",
+    "453.85bc4d76.chunk.js.map": "/lego-world/static/js/453.85bc4d76.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2edcf0fc.css",
+    "static/js/main.5add7c60.js"
+  ]
+}
